@@ -7,7 +7,6 @@
 //
 import UIKit
 import SnapKit
-import Kingfisher
 
 class ProductCell: UITableViewCell {
     static let identifier = "ProductCell"
