@@ -55,11 +55,6 @@ class CartViewModel {
         return Int(ceil(total)) // 無條件進位，轉成 Int
     }
 
-    
-//    func totalAmount() -> Double {
-//        return items.reduce(0) { $0 + ($1.price * Double($1.quantity)) }
-//    }
-    
 }
 
 // 如果在 struct 裡修改，要加 mutating

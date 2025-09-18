@@ -106,67 +106,6 @@ class ProductDetailViewController: UIViewController {
         addToCartButton.addTarget(self, action: #selector(addToCartTapped), for: .touchUpInside)
     }
 
-    
-//    private func setupUI() {
-//        view.addSubview(scrollView)
-//        scrollView.addSubview(contentView)
-//        contentView.addSubview(imageView)
-//        contentView.addSubview(titleLabel)
-//        contentView.addSubview(priceLabel)
-//        contentView.addSubview(descriptionLabel)
-//        contentView.addSubview(addToCartButton)
-//
-//        scrollView.snp.makeConstraints { make in
-//            make.edges.equalToSuperview()
-//        }
-//
-//        contentView.snp.makeConstraints { make in
-//            make.edges.equalToSuperview()
-//            make.width.equalToSuperview()
-//        }
-//
-//        imageView.snp.makeConstraints { make in
-//            make.top.equalToSuperview().offset(20)
-//            make.centerX.equalToSuperview()
-//            make.width.height.equalTo(200)
-//        }
-//
-//        titleLabel.snp.makeConstraints { make in
-//            make.top.equalTo(imageView.snp.bottom).offset(12)
-//            make.left.right.equalToSuperview().inset(20)
-//        }
-//
-//        priceLabel.snp.makeConstraints { make in
-//            make.top.equalTo(titleLabel.snp.bottom).offset(8)
-//            make.left.right.equalTo(titleLabel)
-//        }
-//
-//        descriptionLabel.snp.makeConstraints { make in
-//            make.top.equalTo(priceLabel.snp.bottom).offset(8)
-//            make.left.right.equalTo(titleLabel)
-//        }
-//
-//        addToCartButton.snp.makeConstraints { make in
-//            make.top.equalTo(descriptionLabel.snp.bottom).offset(20)
-//            make.centerX.equalToSuperview()
-//            make.height.equalTo(44)
-//            make.bottom.equalToSuperview().offset(-20)
-//            make.width.equalTo(200)
-//        }
-//    }
-//
-//    private func configureUI() {
-//        imageView.kf.setImage(with: URL(string: viewModel.imageURL))
-//        titleLabel.text = viewModel.title
-//        priceLabel.text = viewModel.priceText
-//        descriptionLabel.text = viewModel.description
-//
-//        addToCartButton.setTitle("加入購物車", for: .normal)
-//        addToCartButton.backgroundColor = .systemBlue
-//        addToCartButton.tintColor = .white
-//        addToCartButton.layer.cornerRadius = 8
-//        addToCartButton.addTarget(self, action: #selector(addToCartTapped), for: .touchUpInside)
-//    }
 
     @objc private func addToCartTapped() {
         // ✅ 改成直接呼叫 CartViewModel.shared

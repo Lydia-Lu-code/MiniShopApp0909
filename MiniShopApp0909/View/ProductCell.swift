@@ -43,6 +43,7 @@ class ProductCell: UITableViewCell {
             make.left.equalTo(titleLabel)
             make.top.equalTo(titleLabel.snp.bottom).offset(4)
         }
+        
     }
     
     func configure(with product: Product) {
